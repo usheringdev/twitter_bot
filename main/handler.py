@@ -111,14 +111,6 @@ class ManageTweet:
 class UploadNASADataToTwitter:
 
     @classmethod
-    def get_nasa_key(cls):
-        return os.environ.get('NASA_KEY')
-
-    @classmethod
-    def get_twitter_keys(cls):
-        return
-
-    @classmethod
     def upload_nasa_data_to_twitter(cls, extra_params=None, sleep=10):
         if extra_params is None:
             extra_params = {}
